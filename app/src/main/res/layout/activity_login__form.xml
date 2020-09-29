@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/login2"
+    android:visibility="visible"
+    tools:context=".Login_Form">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="05dp"
+        android:text="LOGIN HERE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="20dp"
+        android:ems="35"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#A9A9A9"
+        android:textColorHint="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_pwd_icon"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="20dp"
+        android:ems="35"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#A9A9A9"
+        android:textColorHint="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif"
+        android:padding="15dp"
+        android:text="SIGN IN"
+        android:textColor="#a9a9a9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="05dp"
+        android:ems="20"
+        android:inputType="text"
+        android:onClick="btn_signup_Form"
+        android:text="New User? Register Here"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:focusable="false"
+        />
+   <!-- <WebView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_weight="1"
+        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25sp">
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fb"
+            />
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_google"
+            />
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_googleplus"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
